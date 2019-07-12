@@ -1,20 +1,20 @@
 -- Merging decision tree log ---
 provider#com.uzmap.pkg.uzapp.DataProvider
-INJECTED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:50:3-53:50
+INJECTED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:53:3-56:50
 	android:grantUriPermissions
-		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:53:13-47
+		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:56:13-47
 	android:authorities
 		INJECTED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml
-		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:51:13-56
+		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:54:13-56
 	android:exported
-		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:52:13-37
+		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:55:13-37
 	android:name
-		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:50:13-60
+		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:53:13-60
 manifest
-ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:2:1-56:12
+ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:2:1-59:12
 MERGED from [com.android.support:multidex:1.0.2] D:\Developer\Android\Gradle\caches\transforms-2\files-2.1\795dc368c47565fc78872ec0bd9bde4a\AndroidManifest.xml:17:1-22:12
 MERGED from [:moduleScrollPicture] F:\APICloudWorkspace\APICloudModuleSDK\moduleScrollPicture\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [:permissionModule] F:\APICloudWorkspace\APICloudModuleSDK\permissionModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-22:12
@@ -31,9 +31,9 @@ MERGED from [com.android.support:support-media-compat:25.3.1] D:\Developer\Andro
 MERGED from [com.android.support:support-core-utils:25.3.1] D:\Developer\Android\Gradle\caches\transforms-2\files-2.1\a7876dfebbdaccc9221b7ffc6ab9f8d3\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-ui:25.3.1] D:\Developer\Android\Gradle\caches\transforms-2\files-2.1\a9fbc39b67d6db7756687678794cc96c\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:25.3.1] D:\Developer\Android\Gradle\caches\transforms-2\files-2.1\62d759a00c834739dbd562e432908d8b\AndroidManifest.xml:17:1-31:12
-INJECTED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:2:1-59:12
 	package
 		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:4:5-35
 		INJECTED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml
@@ -98,20 +98,32 @@ uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:23:5-78
 	android:name
 		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:23:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:24:5-80
+	android:name
+		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:24:22-78
 uses-permission#android.permission.CAMERA
-ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:24:5-65
+ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:25:5-65
 	android:name
-		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:24:22-62
+		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:25:22-62
 uses-permission#android.permission.CALL_PHONE
-ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:25:5-69
+ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:26:5-69
 	android:name
-		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:25:22-66
+		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:26:22-66
 uses-permission#android.permission.READ_SMS
-ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:27:5-67
+ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:28:5-67
 	android:name
-		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:27:22-64
+		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:28:22-64
+uses-permission#android.permission.SEND_SMS
+ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:29:5-67
+	android:name
+		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:29:22-64
+uses-permission#android.permission.WRITE_SMS
+ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:30:5-68
+	android:name
+		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:30:22-65
 application
-ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:29:5-54:19
+ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:32:5-57:19
 MERGED from [:moduleScrollPicture] F:\APICloudWorkspace\APICloudModuleSDK\moduleScrollPicture\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-15:19
 MERGED from [:moduleScrollPicture] F:\APICloudWorkspace\APICloudModuleSDK\moduleScrollPicture\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-15:19
 MERGED from [:permissionModule] F:\APICloudWorkspace\APICloudModuleSDK\permissionModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-20:19
@@ -143,52 +155,52 @@ MERGED from [com.android.support:support-compat:25.3.1] D:\Developer\Android\Gra
 	android:supportsRtl
 		ADDED from [:moduleScrollPicture] F:\APICloudWorkspace\APICloudModuleSDK\moduleScrollPicture\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:32:9-41
+		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:35:9-41
 	android:hardwareAccelerated
-		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:34:9-43
+		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:37:9-43
 	android:largeHeap
-		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:33:9-33
+		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:36:9-33
 	android:icon
-		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:31:9-41
+		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:34:9-41
 	android:allowBackup
-		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:30:9-36
+		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:33:9-36
 		REJECTED from [:moduleScrollPicture] F:\APICloudWorkspace\APICloudModuleSDK\moduleScrollPicture\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-35
 		REJECTED from [:permissionModule] F:\APICloudWorkspace\APICloudModuleSDK\permissionModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-35
 		REJECTED from [:moduleDemo] F:\APICloudWorkspace\APICloudModuleSDK\moduleDemo\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-35
 		REJECTED from [:moduleSyncInterface] F:\APICloudWorkspace\APICloudModuleSDK\moduleSyncInterface\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-35
 		REJECTED from [:moduleRefresh] F:\APICloudWorkspace\APICloudModuleSDK\moduleRefresh\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-35
 	tools:replace
-		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:35:9-57
+		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:38:9-57
 	android:name
-		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:29:18-66
+		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:32:18-66
 meta-data#uz_version
-ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:37:9-70
+ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:40:9-70
 	android:value
-		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:37:46-67
+		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:40:46-67
 	android:name
-		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:37:20-45
+		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:40:20-45
 activity#com.uzmap.pkg.EntranceActivity
-ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:39:9-49:20
+ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:42:9-52:20
 	android:screenOrientation
-		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:43:13-49
+		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:46:13-49
 	android:label
-		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:41:13-45
+		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:44:13-45
 	android:configChanges
-		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:44:13-122
+		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:47:13-122
 	android:theme
-		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:42:13-44
+		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:45:13-44
 	android:name
-		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:40:13-58
+		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:43:13-58
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:45:13-48:29
+ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:48:13-51:29
 action#android.intent.action.MAIN
-ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:46:17-69
+ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:49:17-69
 	android:name
-		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:46:25-66
+		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:49:25-66
 category#android.intent.category.LAUNCHER
-ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:47:17-77
+ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:50:17-77
 	android:name
-		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:47:27-74
+		ADDED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:50:27-74
 uses-sdk
 INJECTED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from F:\APICloudWorkspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml

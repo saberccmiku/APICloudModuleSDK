@@ -6,8 +6,10 @@ import com.uzmap.pkg.uzcore.UZWebView;
 import com.uzmap.pkg.uzcore.uzmodule.UZModule;
 import com.uzmap.pkg.uzcore.uzmodule.UZModuleContext;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class APIModule extends UZModule {
@@ -32,8 +34,8 @@ public class APIModule extends UZModule {
     /**
      * 动态申请读取权限
      */
-    private void checkPermission(UZModuleContext moduleContext) {
-        List<String> permissionList= moduleContext.optArray("permission");
+    private void checkPermission(final UZModuleContext moduleContext) {
+        List<String> permissionList = moduleContext.optArray("permission");
         Object[] objList = permissionList.toArray();
         List<String> tempList = new ArrayList<>();
         assert objList != null;
@@ -45,15 +47,27 @@ public class APIModule extends UZModule {
         final PermissionListener permissionListener = new PermissionListener() {
             @Override
             public void permissionGranted(@NonNull String[] permissions) {
+                setBackcall(moduleContext,true);
             }
 
             @Override
             public void permissionDenied(@NonNull String[] permissions) {
-
+                setBackcall(moduleContext,false);
             }
         };
 
-        PermissionsUtil.requestPermission(moduleContext.getContext(),permissionListener, permissions);
+        PermissionsUtil.requestPermission(moduleContext.getContext(), permissionListener, permissions);
+
+    }
+
+    public void setBackcall(UZModuleContext moduleContext,boolean isGranted){
+        JSONObject ret = new JSONObject();
+        try {
+            ret.put("isGranted", isGranted);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        moduleContext.success(ret, true);
     }
 
 }

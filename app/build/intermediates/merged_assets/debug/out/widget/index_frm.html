@@ -154,7 +154,9 @@
 
 		function getPermission(){
 			var param = {msg:"获取权限许可!",permission:["android.permission.CAMERA","android.permission.CALL_PHONE","android.permission.READ_SMS"]};
-			permissionModule.getPermission(param);
+			permissionModule.getPermission(param,function(ret, err){
+	        	alert(JSON.stringify(ret));
+	        });
 		}
 
 	</script>
