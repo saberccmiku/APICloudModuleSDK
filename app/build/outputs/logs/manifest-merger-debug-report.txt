@@ -18,7 +18,7 @@ INJECTED from D:\Developer\workspace\APICloudModuleSDK\app\src\main\AndroidManif
 MERGED from [com.android.support:multidex:1.0.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\9edabe492fd2274882f8fd096761adc5\AndroidManifest.xml:17:1-22:12
 MERGED from [:moduleScrollPicture] D:\Developer\workspace\APICloudModuleSDK\moduleScrollPicture\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [:permissionModule] D:\Developer\workspace\APICloudModuleSDK\permissionModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-22:12
-MERGED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-22:12
+MERGED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-29:12
 MERGED from [com.android.support:appcompat-v7:24.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\1e80678a98b217a5f8e2a37153b1367c\AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:animated-vector-drawable:24.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\daaf9af45162a4906fdf6369608a60b9\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:support-vector-drawable:24.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\2c0483724ebd46f17e5d77ff4b45c7ae\AndroidManifest.xml:17:1-25:12
@@ -67,18 +67,26 @@ ADDED from D:\Developer\workspace\APICloudModuleSDK\app\src\main\AndroidManifest
 		ADDED from D:\Developer\workspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:8:9-34
 uses-permission#android.permission.INTERNET
 ADDED from D:\Developer\workspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:15:5-67
+MERGED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-67
+MERGED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-67
 	android:name
 		ADDED from D:\Developer\workspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:15:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from D:\Developer\workspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:16:5-79
+MERGED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-79
+MERGED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-79
 	android:name
 		ADDED from D:\Developer\workspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:16:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from D:\Developer\workspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:17:5-76
+MERGED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-76
+MERGED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-76
 	android:name
 		ADDED from D:\Developer\workspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:17:22-73
 uses-permission#android.permission.VIBRATE
 ADDED from D:\Developer\workspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:18:5-66
+MERGED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-66
+MERGED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-66
 MERGED from [:moduleDemo] D:\Developer\workspace\APICloudModuleSDK\moduleDemo\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-66
 MERGED from [:moduleDemo] D:\Developer\workspace\APICloudModuleSDK\moduleDemo\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-66
 	android:name
@@ -113,6 +121,8 @@ ADDED from D:\Developer\workspace\APICloudModuleSDK\app\src\main\AndroidManifest
 		ADDED from D:\Developer\workspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:26:22-66
 uses-permission#android.permission.READ_SMS
 ADDED from D:\Developer\workspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:28:5-67
+MERGED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-67
+MERGED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-67
 	android:name
 		ADDED from D:\Developer\workspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:28:22-64
 uses-permission#android.permission.SEND_SMS
@@ -125,6 +135,8 @@ ADDED from D:\Developer\workspace\APICloudModuleSDK\app\src\main\AndroidManifest
 		ADDED from D:\Developer\workspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:30:22-65
 uses-permission#android.permission.RECEIVE_SMS
 ADDED from D:\Developer\workspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:31:5-70
+MERGED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-70
+MERGED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-70
 	android:name
 		ADDED from D:\Developer\workspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:31:22-67
 application
@@ -133,8 +145,8 @@ MERGED from [:moduleScrollPicture] D:\Developer\workspace\APICloudModuleSDK\modu
 MERGED from [:moduleScrollPicture] D:\Developer\workspace\APICloudModuleSDK\moduleScrollPicture\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-15:19
 MERGED from [:permissionModule] D:\Developer\workspace\APICloudModuleSDK\permissionModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-20:19
 MERGED from [:permissionModule] D:\Developer\workspace\APICloudModuleSDK\permissionModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-20:19
-MERGED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-20:19
-MERGED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-20:19
+MERGED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:5-27:19
+MERGED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:5-27:19
 MERGED from [com.android.support:appcompat-v7:24.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\1e80678a98b217a5f8e2a37153b1367c\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:appcompat-v7:24.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\1e80678a98b217a5f8e2a37153b1367c\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:24.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\daaf9af45162a4906fdf6369608a60b9\AndroidManifest.xml:22:5-20
@@ -173,7 +185,7 @@ MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Administrator\.
 		ADDED from D:\Developer\workspace\APICloudModuleSDK\app\src\main\AndroidManifest.xml:34:9-36
 		REJECTED from [:moduleScrollPicture] D:\Developer\workspace\APICloudModuleSDK\moduleScrollPicture\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-35
 		REJECTED from [:permissionModule] D:\Developer\workspace\APICloudModuleSDK\permissionModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-35
-		REJECTED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-35
+		REJECTED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:9-35
 		REJECTED from [:moduleDemo] D:\Developer\workspace\APICloudModuleSDK\moduleDemo\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-35
 		REJECTED from [:moduleSyncInterface] D:\Developer\workspace\APICloudModuleSDK\moduleSyncInterface\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-35
 		REJECTED from [:moduleRefresh] D:\Developer\workspace\APICloudModuleSDK\moduleRefresh\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-35
@@ -270,15 +282,15 @@ ADDED from [:permissionModule] D:\Developer\workspace\APICloudModuleSDK\permissi
 	android:name
 		ADDED from [:permissionModule] D:\Developer\workspace\APICloudModuleSDK\permissionModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-72
 activity#com.jlkj.modulesms.PermissionActivity
-ADDED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:9-19:84
+ADDED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:9-26:84
 	android:screenOrientation
-		ADDED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-49
+		ADDED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-49
 	android:configChanges
-		ADDED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-55
+		ADDED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:13-55
 	android:theme
-		ADDED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-81
+		ADDED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-81
 	android:name
-		ADDED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-65
+		ADDED from [:moduleSMS] D:\Developer\workspace\APICloudModuleSDK\moduleSMS\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:13-65
 meta-data#android.support.VERSION
 ADDED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\df699aa1e868bd79a44fcd713359dd0e\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\7434cbdf758e7a57da998e5312e10d79\AndroidManifest.xml:25:5-27:34

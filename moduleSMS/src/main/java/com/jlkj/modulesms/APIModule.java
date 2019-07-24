@@ -137,7 +137,7 @@ public class APIModule extends UZModule {
                     int intType = cur.getInt(index_Type);
 
                     SimpleDateFormat dateFormat = new SimpleDateFormat(
-                            "yyyy-MM-dd hh:mm:ss");
+                            "yyyy-MM-dd HH:mm:ss");
                     Date d = new Date(longDate);
                     String strDate = dateFormat.format(d);
 

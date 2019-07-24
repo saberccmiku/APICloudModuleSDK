@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, initial-scale=1.0, width=device-width" />
+    <meta name="format-detection" content="telephone=no, email=no, date=no, address=no">
+    <title>测试数据</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <style>
+        label {
+            margin: 10px;
+            font-size: 24px;
+        }
+
+        ul {
+            margin-bottom: 10px;
+        }
+
+        ul li {
+            margin: 5px 10px;
+            padding: 5px;
+            color: #000;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+
+<body>
+<label id="value" onclick="getSMS()">点击</label>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript">
+var smsModule ;
+apiready = function() {
+   smsModule =api.require('moduleSMS');
+}
+
+//获取所有短信
+function getSMS(){
+  smsModule.getSMS(function(ret, err){
+        alert(JSON.stringify(ret));
+      });
+}
+//指定查询条件 例如查询2019-07-23 21:07:27之后的短信
+function getSMS(){
+  var time = new Date('2019-07-23 21:07:27').getTime();
+  var param = {where:"date >"+time};
+  alert(JSON.stringify(param));
+  smsModule.getSMS(param,function(ret, err){
+        alert(JSON.stringify(ret));
+      });
+}
+
+//指定查询条件 例如查询内容包含‘测试’的短信
+function getSMS(){
+  var param = {where:"body like '%测试%' "};
+  alert(JSON.stringify(param));
+  smsModule.getSMS(param,function(ret, err){
+        alert(JSON.stringify(ret));
+      });
+}
+
+//ret对象:isGranted对应授权是否成功 true授权 false未授权 ;sms对应短信集合
+//其他查询方式满足 sql语句基本格式
+//短信结构字段 sms{_id:"手机短信编号",address:"发送者号码",person:"发送者",body:"短信内容",date:"发送或者接受时间",type:"null-所有,0-所有短信,1-接收,2-发送,3-草稿,4-发件箱,5-发送失败,6-待发送列表"}
+//条件查询时，date对应时间戳毫秒值 ,type要根据序号0、1、2等来判断
+
+</script>
+
+</html>
