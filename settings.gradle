@@ -1,1 +1,1 @@
-include ':app', ':moduleDemo', ':moduleScrollPicture', ':moduleSyncInterface', ':moduleRefresh', ':moduleAppdelegate', ':permissionModule'
+include ':app', ':moduleDemo', ':moduleScrollPicture', ':moduleSyncInterface', ':moduleRefresh', ':moduleAppdelegate', ':permissionModule', ':moduleSMS'

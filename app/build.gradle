@@ -44,4 +44,5 @@ dependencies {
     implementation project(':moduleRefresh')
     implementation project(':moduleAppdelegate')
     implementation project(':permissionModule')
+    implementation project(':moduleSMS')
 }

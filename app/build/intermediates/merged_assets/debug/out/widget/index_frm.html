@@ -19,10 +19,12 @@
 		var uzmoduledemo = null;
 		var scrollPicture = null;
 		var permissionModule = null;
+		var moduleSMS = null;
 		apiready = function(){
 	    	uzmoduledemo = api.require('moduleDemo');
 	    	scrollPicture = api.require('scrollPicture');
 	    	permissionModule =api.require('permissionModule');
+	    	moduleSMS =api.require('moduleSMS');
 	    }
 	    
 		function showAlert(){
@@ -159,6 +161,12 @@
 	        });
 		}
 
+		function getSMS(){
+			moduleSMS.getSMS(function(ret, err){
+	        	alert(JSON.stringify(ret));
+	        });
+		}
+
 	</script>
 </head>
 <body>
@@ -166,7 +174,7 @@
         <div id="main">
         	<br>
 			<div class='itemtitle'>0、测试module</div>
-			<div class="clickbtn" tapmode="active" onclick="getPermission()" >点击测试</div>
+			<div class="clickbtn" tapmode="active" onclick="getSMS()" >点击测试</div>
 			<div class='itemtitle'>1、弹出对话框</div>
 				<div class="clickbtn" tapmode="active" onclick="showAlert()" >点击弹出</div>     
 			<div class='itemtitle'>2、启动Activity</div>

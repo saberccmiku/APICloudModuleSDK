@@ -23,6 +23,10 @@
 		{
 			"name":"permissionModule",
 			"class":"com.jlkj.permissionmodule.APIModule"
+		},
+		{
+			"name":"moduleSMS",
+			"class":"com.jlkj.modulesms.APIModule"
 		}
 	]
 }

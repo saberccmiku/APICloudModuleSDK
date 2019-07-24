@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/moduleAppdelegate/moduleAppdelegate.iml" filepath="$PROJECT_DIR$/moduleAppdelegate/moduleAppdelegate.iml" />
       <module fileurl="file://$PROJECT_DIR$/moduleDemo/moduleDemo.iml" filepath="$PROJECT_DIR$/moduleDemo/moduleDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/moduleRefresh/moduleRefresh.iml" filepath="$PROJECT_DIR$/moduleRefresh/moduleRefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/moduleSMS/moduleSMS.iml" filepath="$PROJECT_DIR$/moduleSMS/moduleSMS.iml" />
       <module fileurl="file://$PROJECT_DIR$/moduleScrollPicture/moduleScrollPicture.iml" filepath="$PROJECT_DIR$/moduleScrollPicture/moduleScrollPicture.iml" />
       <module fileurl="file://$PROJECT_DIR$/moduleSyncInterface/moduleSyncInterface.iml" filepath="$PROJECT_DIR$/moduleSyncInterface/moduleSyncInterface.iml" />
       <module fileurl="file://$PROJECT_DIR$/permissionModule/permissionModule.iml" filepath="$PROJECT_DIR$/permissionModule/permissionModule.iml" />

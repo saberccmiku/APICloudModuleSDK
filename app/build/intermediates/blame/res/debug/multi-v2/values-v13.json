@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\APICloudWorkspace\\APICloudModuleSDK\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v13\\values-v13.xml",
+            "outputFile": "D:\\Developer\\workspace\\APICloudModuleSDK\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v13\\values-v13.xml",
             "map": [
                 {
-                    "source": "D:\\Developer\\Android\\Gradle\\caches\\transforms-2\\files-2.1\\22dd56808c20c96fef658d0c6eec0fef\\res\\values-v13\\values-v13.xml",
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\1e80678a98b217a5f8e2a37153b1367c\\res\\values-v13\\values-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
