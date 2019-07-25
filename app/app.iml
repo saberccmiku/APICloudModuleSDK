@@ -149,5 +149,12 @@
     <orderEntry type="module" module-name="moduleRefresh" />
     <orderEntry type="module" module-name="moduleSyncInterface" />
     <orderEntry type="module" module-name="moduleAppdelegate" />
+    <orderEntry type="module" module-name="permissionModule" />
+    <orderEntry type="module" module-name="moduleScrollPicture" />
+    <orderEntry type="module" module-name="moduleSMS" />
+    <orderEntry type="module" module-name="moduleDemo" />
+    <orderEntry type="module" module-name="moduleRefresh" />
+    <orderEntry type="module" module-name="moduleSyncInterface" />
+    <orderEntry type="module" module-name="moduleAppdelegate" />
   </component>
 </module>

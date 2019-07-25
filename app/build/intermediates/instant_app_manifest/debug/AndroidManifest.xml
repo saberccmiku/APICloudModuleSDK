@@ -72,6 +72,12 @@
             android:exported="false"
             android:grantUriPermissions="true" />
 
+        <receiver android:name="com.jlkj.modulesms.SmsReceiver" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
         <activity
             android:name="com.jlkj.permissionmodule.PermissionActivity"
             android:configChanges="orientation|locale"

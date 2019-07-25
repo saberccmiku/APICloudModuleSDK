@@ -5,32 +5,33 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteException;
 import android.net.Uri;
-import android.os.Handler;
-import android.os.Message;
 import android.support.annotation.NonNull;
-import android.telephony.SmsMessage;
 import android.widget.Toast;
 
 import com.uzmap.pkg.uzcore.UZWebView;
 import com.uzmap.pkg.uzcore.uzmodule.UZModule;
 import com.uzmap.pkg.uzcore.uzmodule.UZModuleContext;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import java.lang.ref.WeakReference;
+
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 import static android.content.Context.MODE_PRIVATE;
 
 public class APIModule extends UZModule {
 
+
     public APIModule(UZWebView webView) {
         super(webView);
     }
     private JSONObject ret = new JSONObject();
+
 
     /**
      * <strong>函数</strong><br><br>
@@ -46,9 +47,16 @@ public class APIModule extends UZModule {
     }
 
 
-//    public void jsmethod_registerSMS(final UZModuleContext moduleContext) {
-//        new MyHandler(moduleContext);
-//    }
+    public void jsmethod_registerSMS(final UZModuleContext moduleContext) {
+        SmsListener smsListener = new SmsListener() {
+            @Override
+            public void onChanged(@NonNull List<SMS> smsList) {
+                setBackcall(moduleContext,smsList);
+            }
+        };
+
+        SmsReceiver.setListener(smsListener);
+    }
 
 
 
@@ -86,9 +94,52 @@ public class APIModule extends UZModule {
 
     private void setBackcall(UZModuleContext moduleContext, boolean isGranted){
         List<SMS> smsInPhone = getSmsInPhone(moduleContext);
+        JSONArray array = new JSONArray();
+        for (SMS sms : smsInPhone) {
+            JSONObject temp = new JSONObject();
+            try {
+                temp.put("_id",sms.get_id());
+                temp.put("address",sms.getAddress());
+                temp.put("person",sms.getPerson());
+                temp.put("body",sms.getBody());
+                temp.put("date",sms.getDate());
+                temp.put("type",sms.getType());
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+            array.put(temp);
+
+        }
         try {
             ret.put("isGranted", isGranted);
-            ret.put("sms",smsInPhone);
+            ret.put("SMS",array);
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        moduleContext.success(ret, true);
+    }
+
+    private void setBackcall(UZModuleContext moduleContext,List<SMS> smsList){
+        JSONArray array = new JSONArray();
+        for (SMS sms : smsList) {
+            JSONObject temp = new JSONObject();
+            try {
+                temp.put("_id", sms.get_id());
+                temp.put("address", sms.getAddress());
+                temp.put("person", sms.getPerson());
+                temp.put("body", sms.getBody());
+                temp.put("date", sms.getDate());
+                temp.put("type", sms.getType());
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            array.put(temp);
+        }
+        try {
+            ret.put("SMS",array);
+
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -130,43 +181,24 @@ public class APIModule extends UZModule {
 
                 do {
                     int _id = cur.getInt(index_id);
-                    String strAddress = cur.getString(index_Address);
-                    int intPerson = cur.getInt(index_Person);
+                    String address = cur.getString(index_Address);
+                    int person = cur.getInt(index_Person);
                     String body = cur.getString(index_Body);
-                    long longDate = cur.getLong(index_Date);
-                    int intType = cur.getInt(index_Type);
+                    long date = cur.getLong(index_Date);
+                    int type = cur.getInt(index_Type);
 
                     SimpleDateFormat dateFormat = new SimpleDateFormat(
-                            "yyyy-MM-dd HH:mm:ss");
-                    Date d = new Date(longDate);
+                            "yyyy-MM-dd HH:mm:ss", Locale.CHINA);
+                    Date d = new Date(date);
                     String strDate = dateFormat.format(d);
-
-                    String strType;
-                    if (intType == 1) {
-                        strType = "接收";
-                    } else if (intType == 2) {
-                        strType = "发送";
-                    } else if (intType == 3) {
-                        strType = "草稿";
-                    } else if (intType == 4) {
-                        strType = "发件箱";
-                    } else if (intType == 5) {
-                        strType = "发送失败";
-                    } else if (intType == 6) {
-                        strType = "待发送列表";
-                    } else if (intType == 0) {
-                        strType = "所有短信";
-                    } else {
-                        strType = "null";
-                    }
 
                     SMS sms = new SMS();
                     sms.set_id(_id);
-                    sms.setAddress(strAddress);
-                    sms.setPerson(intPerson);
+                    sms.setAddress(address);
+                    sms.setPerson(person);
                     sms.setBody(body);
                     sms.setDate(strDate);
-                    sms.setType(strType);
+                    sms.setType(type);
 
                     smsList.add(sms);
 
@@ -183,36 +215,6 @@ public class APIModule extends UZModule {
         }
 
         return smsList;
-    }
-
-
-    private static class MyHandler extends Handler {
-
-        // SoftReference<Activity> 也可以使用软应用 只有在内存不足的时候才会被回收
-        private final WeakReference<UZModuleContext> mActivity;
-
-        private MyHandler(UZModuleContext activity) {
-            mActivity = new WeakReference<>(activity);
-        }
-
-        @Override
-        public void handleMessage(Message msg) {
-            UZModuleContext activity = mActivity.get();
-            if (activity != null){
-                SmsMessage smsMessage = (SmsMessage) msg.obj;
-                JSONObject jsonObject = null;
-                try {
-                    jsonObject = activity.get().put("newSMS",smsMessage.getMessageBody());
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-                System.out.println("-----------------------------------------");
-                System.out.println(smsMessage.getMessageBody());
-                System.out.println("-----------------------------------------");
-                activity.success(jsonObject,true);
-            }
-            super.handleMessage(msg);
-        }
     }
 
 }

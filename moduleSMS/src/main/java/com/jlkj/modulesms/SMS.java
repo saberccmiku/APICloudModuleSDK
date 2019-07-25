@@ -7,7 +7,7 @@ public class SMS {
     private int person;
     private String body;
     private String date;
-    private String type;
+    private int type;
 
     public int get_id() {
         return _id;
@@ -49,23 +49,12 @@ public class SMS {
         this.date = date;
     }
 
-    public String getType() {
+    public int getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(int type) {
         this.type = type;
     }
 
-    @Override
-    public String toString() {
-        return "SMS{" +
-                "_id=" + _id +
-                ", address='" + address + '\'' +
-                ", person='" + person + '\'' +
-                ", body='" + body + '\'' +
-                ", date='" + date + '\'' +
-                ", type='" + type + '\'' +
-                '}';
-    }
 }
